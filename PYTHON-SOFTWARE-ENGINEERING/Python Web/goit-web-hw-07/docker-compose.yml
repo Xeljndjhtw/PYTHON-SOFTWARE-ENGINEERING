@@ -1,0 +1,21 @@
+services:
+  postgres:
+    image: postgres:latest
+    container_name: container_bl
+    environment:
+      POSTGRES_USER: Xelj
+      POSTGRES_PASSWORD: 05071101
+      POSTGRES_DB: dbbl
+    ports:
+      - "5433:5433"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - postgres-network
+
+volumes:
+  pgdata:
+
+networks:
+  postgres-network:
+    driver: bridge
