@@ -1,0 +1,17 @@
+aioredis
+alembic
+celery
+cloudinary
+dotenv
+django
+fastapi
+fastapi_limiter
+jose
+passlib
+python-decouple
+psycopg2
+pydantic
+redis
+slowapi
+sqlalchemy
+uvicorn
