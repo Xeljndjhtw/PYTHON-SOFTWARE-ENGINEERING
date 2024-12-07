@@ -1,0 +1,11 @@
+# quotes_list.html
+
+{% extends 'base.html' %}
+{% block content %}
+<h1>All Quotes</h1>
+<ul>
+  {% for quote in quotes %}
+    <li>{{ quote.text }} — <a href="{% url 'author_detail' quote.author.pk %}">{{ quote.author.name }}</a></li>
+  {% endfor %}
+</ul>
+{% endblock %}
